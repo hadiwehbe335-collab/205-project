@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T20:28:26.0612667+04:00",
+  "title": "Design System: Tutorly",
+  "extensions": {
+    "colorMeta": {
+      "primary-indigo": {
+        "role": "primary",
+        "displayName": "Chapter Indigo",
+        "canonical": "#5b55d9",
+        "tonalRamp": ["oklch(23% 0.105 285)", "oklch(32% 0.145 285)", "oklch(42% 0.175 285)", "#5b55d9", "oklch(67% 0.145 285)", "oklch(78% 0.095 285)", "#e9e9ff", "oklch(96% 0.018 285)"]
+      },
+      "primary-indigo-dark": {
+        "role": "primary",
+        "displayName": "Deep Chapter Indigo",
+        "canonical": "#423db6",
+        "tonalRamp": ["oklch(20% 0.095 285)", "oklch(29% 0.135 285)", "#423db6", "oklch(52% 0.175 285)", "oklch(64% 0.135 285)", "oklch(76% 0.09 285)", "oklch(87% 0.05 285)", "oklch(96% 0.015 285)"]
+      },
+      "primary-indigo-pale": {
+        "role": "primary",
+        "displayName": "Soft Lilac Signal",
+        "canonical": "#e9e9ff",
+        "tonalRamp": ["oklch(24% 0.07 285)", "oklch(35% 0.08 285)", "oklch(47% 0.075 285)", "oklch(59% 0.065 285)", "oklch(71% 0.05 285)", "oklch(82% 0.035 285)", "#e9e9ff", "oklch(97% 0.012 285)"]
+      },
+      "provenance-mint": {
+        "role": "secondary",
+        "displayName": "Source Mint",
+        "canonical": "#267664",
+        "tonalRamp": ["oklch(21% 0.055 170)", "oklch(30% 0.075 170)", "oklch(39% 0.085 170)", "#267664", "oklch(61% 0.09 170)", "oklch(73% 0.065 170)", "oklch(84% 0.04 170)", "oklch(95% 0.018 170)"]
+      },
+      "provenance-mint-pale": {
+        "role": "secondary",
+        "displayName": "Source Mint Wash",
+        "canonical": "#e7f5f0",
+        "tonalRamp": ["oklch(22% 0.045 170)", "oklch(34% 0.06 170)", "oklch(46% 0.065 170)", "oklch(58% 0.06 170)", "oklch(70% 0.05 170)", "oklch(81% 0.035 170)", "#e7f5f0", "oklch(97% 0.012 170)"]
+      },
+      "priority-amber": {
+        "role": "tertiary",
+        "displayName": "Priority Amber",
+        "canonical": "#8a5c11",
+        "tonalRamp": ["oklch(22% 0.055 75)", "oklch(32% 0.075 75)", "#8a5c11", "oklch(54% 0.11 75)", "oklch(66% 0.1 75)", "oklch(78% 0.07 75)", "oklch(89% 0.035 75)", "oklch(96% 0.012 75)"]
+      },
+      "priority-amber-pale": {
+        "role": "tertiary",
+        "displayName": "Priority Amber Wash",
+        "canonical": "#fff2d8",
+        "tonalRamp": ["oklch(23% 0.05 78)", "oklch(35% 0.07 78)", "oklch(47% 0.075 78)", "oklch(59% 0.065 78)", "oklch(71% 0.05 78)", "oklch(83% 0.035 78)", "oklch(91% 0.025 78)", "#fff2d8"]
+      },
+      "feedback-rose": {
+        "role": "tertiary",
+        "displayName": "Feedback Rose",
+        "canonical": "#9a3f4d",
+        "tonalRamp": ["oklch(21% 0.055 20)", "oklch(31% 0.075 20)", "#9a3f4d", "oklch(54% 0.105 20)", "oklch(66% 0.085 20)", "oklch(78% 0.055 20)", "oklch(89% 0.03 20)", "oklch(96% 0.012 20)"]
+      },
+      "feedback-rose-pale": {
+        "role": "tertiary",
+        "displayName": "Feedback Rose Wash",
+        "canonical": "#fff0f2",
+        "tonalRamp": ["oklch(22% 0.045 20)", "oklch(34% 0.06 20)", "oklch(46% 0.06 20)", "oklch(58% 0.052 20)", "oklch(70% 0.04 20)", "oklch(82% 0.026 20)", "oklch(91% 0.016 20)", "#fff0f2"]
+      },
+      "deep-ink": {
+        "role": "neutral",
+        "displayName": "Deep Study Ink",
+        "canonical": "#172039",
+        "tonalRamp": ["#172039", "oklch(29% 0.04 265)", "oklch(40% 0.035 265)", "oklch(52% 0.03 265)", "oklch(64% 0.025 265)", "oklch(76% 0.02 265)", "oklch(87% 0.012 265)", "oklch(96% 0.006 265)"]
+      },
+      "soft-ink": {
+        "role": "neutral",
+        "displayName": "Soft Study Ink",
+        "canonical": "#515c75",
+        "tonalRamp": ["oklch(21% 0.03 265)", "oklch(31% 0.035 265)", "#515c75", "oklch(52% 0.032 265)", "oklch(64% 0.026 265)", "oklch(76% 0.02 265)", "oklch(87% 0.012 265)", "oklch(96% 0.006 265)"]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Study Ink",
+        "canonical": "#68718a",
+        "tonalRamp": ["oklch(22% 0.025 265)", "oklch(32% 0.03 265)", "oklch(42% 0.03 265)", "#68718a", "oklch(63% 0.025 265)", "oklch(74% 0.02 265)", "oklch(85% 0.012 265)", "oklch(95% 0.006 265)"]
+      },
+      "sidebar-soft": {
+        "role": "neutral",
+        "displayName": "Sidebar Soft Ink",
+        "canonical": "#222d48",
+        "tonalRamp": ["oklch(17% 0.035 265)", "#222d48", "oklch(34% 0.04 265)", "oklch(46% 0.035 265)", "oklch(58% 0.03 265)", "oklch(70% 0.022 265)", "oklch(83% 0.014 265)", "oklch(95% 0.006 265)"]
+      },
+      "cool-canvas": {
+        "role": "neutral",
+        "displayName": "Cool White Canvas",
+        "canonical": "#f7f8ff",
+        "tonalRamp": ["oklch(20% 0.018 275)", "oklch(32% 0.022 275)", "oklch(44% 0.024 275)", "oklch(57% 0.022 275)", "oklch(69% 0.019 275)", "oklch(81% 0.015 275)", "oklch(90% 0.011 275)", "#f7f8ff"]
+      },
+      "white-surface": {
+        "role": "neutral",
+        "displayName": "White Surface",
+        "canonical": "#ffffff",
+        "tonalRamp": ["oklch(20% 0 0)", "oklch(32% 0 0)", "oklch(44% 0 0)", "oklch(56% 0 0)", "oklch(68% 0 0)", "oklch(80% 0 0)", "oklch(90% 0 0)", "#ffffff"]
+      },
+      "soft-lilac": {
+        "role": "neutral",
+        "displayName": "Soft Lilac Field",
+        "canonical": "#f0f1ff",
+        "tonalRamp": ["oklch(22% 0.035 280)", "oklch(34% 0.04 280)", "oklch(46% 0.04 280)", "oklch(58% 0.035 280)", "oklch(70% 0.03 280)", "oklch(81% 0.025 280)", "#f0f1ff", "oklch(97% 0.01 280)"]
+      },
+      "field-lilac": {
+        "role": "neutral",
+        "displayName": "Input Lilac White",
+        "canonical": "#fafaff",
+        "tonalRamp": ["oklch(22% 0.028 280)", "oklch(34% 0.032 280)", "oklch(46% 0.03 280)", "oklch(58% 0.027 280)", "oklch(70% 0.023 280)", "oklch(82% 0.018 280)", "oklch(92% 0.01 280)", "#fafaff"]
+      },
+      "blue-grey-line": {
+        "role": "neutral",
+        "displayName": "Blue-Grey Line",
+        "canonical": "#dfe3f3",
+        "tonalRamp": ["oklch(21% 0.025 270)", "oklch(33% 0.03 270)", "oklch(45% 0.03 270)", "oklch(57% 0.028 270)", "oklch(69% 0.024 270)", "oklch(80% 0.02 270)", "#dfe3f3", "oklch(96% 0.008 270)"]
+      },
+      "blue-grey-line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Blue-Grey Line",
+        "canonical": "#cbd1e5",
+        "tonalRamp": ["oklch(20% 0.03 270)", "oklch(32% 0.035 270)", "oklch(44% 0.038 270)", "oklch(56% 0.035 270)", "oklch(68% 0.03 270)", "#cbd1e5", "oklch(87% 0.018 270)", "oklch(96% 0.008 270)"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Intro Display", "purpose": "The short intro promise only." },
+      "headline": { "displayName": "Chapter Headline", "purpose": "Page titles and the study-session topic." },
+      "title": { "displayName": "Stage Title", "purpose": "Stage, recommendation, and primary panel headings." },
+      "body": { "displayName": "Study Body", "purpose": "Explanations and descriptive academic content." },
+      "label": { "displayName": "Metadata Label", "purpose": "Stages, statuses, priorities, sources, and helper labels." },
+      "control": { "displayName": "Action Label", "purpose": "Decisive button and segmented-control language." },
+      "code": { "displayName": "Schema Code", "purpose": "Database relations and schema notation only." }
+    },
+    "shadows": [
+      { "name": "ambient-panel", "value": "0 18px 45px rgba(40,45,95,.09), 0 3px 10px rgba(40,45,95,.05)", "purpose": "Intro preview and primary lifted panels." },
+      { "name": "dark-recommendation", "value": "0 18px 45px rgba(23,32,57,.16)", "purpose": "The dashboard's dominant next-action panel." },
+      { "name": "primary-action", "value": "0 9px 22px rgba(91,85,217,.24)", "purpose": "Primary buttons at rest." },
+      { "name": "primary-action-hover", "value": "0 12px 27px rgba(91,85,217,.28)", "purpose": "Primary buttons on hover." },
+      { "name": "grounded-completion", "value": "0 12px 25px rgba(38,118,100,.2)", "purpose": "Completion marks and positive confirmation accents." },
+      { "name": "tutor-answer", "value": "0 12px 30px rgba(40,45,95,.07)", "purpose": "Grounded tutor answers and missing-evidence panels." },
+      { "name": "modal", "value": "0 24px 60px rgba(17,24,42,.24)", "purpose": "Dialogs over the dimmed shell." }
+    ],
+    "motion": [
+      { "name": "ease-expressive", "value": "cubic-bezier(.22,1,.36,1)", "purpose": "Buttons, drawer movement, stage entrance, and most interface transitions." },
+      { "name": "state-transition", "value": "200ms", "purpose": "Hover, focus, border, and control-state feedback." },
+      { "name": "stage-reveal", "value": "450ms", "purpose": "An 11px upward entrance with 4px blur resolving to sharpness." },
+      { "name": "progress-transition", "value": "450ms", "purpose": "Progress-width changes." },
+      { "name": "reduced-motion", "value": "0.01ms", "purpose": "Effective instant feedback when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "grid-collapse", "value": "1100px" },
+      { "name": "drawer-shell", "value": "900px" },
+      { "name": "mobile-stack", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The decisive action within a chapter or study stage.",
+      "html": "<button class=\"ds-button-primary\">Continue Study Session</button>",
+      "css": ".ds-button-primary { min-height: 46px; border: 1px solid transparent; border-radius: 12px; padding: 0 19px; background: var(--indigo, #5b55d9); color: #fff; font: 800 .9rem Manrope, ui-sans-serif, sans-serif; box-shadow: 0 9px 22px rgba(91,85,217,.24); cursor: pointer; transition: transform .2s cubic-bezier(.22,1,.36,1), background .2s cubic-bezier(.22,1,.36,1), box-shadow .2s cubic-bezier(.22,1,.36,1); } .ds-button-primary:hover { transform: translateY(-2px); background: var(--indigo-dark, #423db6); box-shadow: 0 12px 27px rgba(91,85,217,.28); } .ds-button-primary:focus-visible { outline: 3px solid rgba(91,85,217,.28); outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quieter supporting, back, or alternate action.",
+      "html": "<button class=\"ds-button-secondary\">Back to Dashboard</button>",
+      "css": ".ds-button-secondary { min-height: 46px; border: 1px solid var(--line-strong, #cbd1e5); border-radius: 12px; padding: 0 19px; background: #fff; color: var(--indigo-dark, #423db6); font: 800 .9rem Manrope, ui-sans-serif, sans-serif; cursor: pointer; transition: transform .2s cubic-bezier(.22,1,.36,1), border-color .2s cubic-bezier(.22,1,.36,1), background .2s cubic-bezier(.22,1,.36,1); } .ds-button-secondary:hover { transform: translateY(-2px); border-color: #9490d9; background: #fbfbff; } .ds-button-secondary:focus-visible { outline: 3px solid rgba(91,85,217,.28); outline-offset: 3px; }"
+    },
+    {
+      "name": "Tutor Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "The course-specific question composer used by Tutorly AI.",
+      "html": "<input class=\"ds-tutor-input\" aria-label=\"Ask Tutorly\" placeholder=\"Ask a question about Database Systems…\">",
+      "css": ".ds-tutor-input { width: 100%; min-height: 48px; border: 1px solid var(--line-strong, #cbd1e5); border-radius: 11px; background: var(--field-lilac, #fafaff); padding: 0 14px; color: var(--ink, #172039); font: 400 .82rem Manrope, ui-sans-serif, sans-serif; caret-color: var(--indigo, #5b55d9); } .ds-tutor-input::placeholder { color: #727b90; } .ds-tutor-input:focus-visible { outline: 3px solid rgba(91,85,217,.28); outline-offset: 3px; }"
+    },
+    {
+      "name": "App Sidebar Navigation",
+      "kind": "nav",
+      "refersTo": "app-sidebar",
+      "description": "The compact ink shell that keeps destinations and course context oriented.",
+      "html": "<nav class=\"ds-sidebar\" aria-label=\"Main navigation\"><strong>Tutorly</strong><button>Dashboard</button><button class=\"ds-sidebar-active\">Study</button><button>Tutor</button><button>Progress</button></nav>",
+      "css": ".ds-sidebar { width: 244px; min-height: 360px; border-radius: 16px; background: var(--ink, #172039); color: #fff; padding: 24px 17px 18px; display: flex; flex-direction: column; gap: 5px; font-family: Manrope, ui-sans-serif, sans-serif; } .ds-sidebar > strong { padding: 0 13px 24px; font-size: 1.3rem; } .ds-sidebar button { min-height: 45px; border: 0; border-radius: 11px; background: transparent; color: #aeb7ca; padding: 0 13px; text-align: left; font-weight: 700; cursor: pointer; } .ds-sidebar button:hover { background: rgba(255,255,255,.06); color: #fff; } .ds-sidebar .ds-sidebar-active { background: var(--sidebar-soft, #222d48); color: #fff; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06); } .ds-sidebar button:focus-visible { outline: 3px solid rgba(155,151,255,.5); outline-offset: 2px; }"
+    },
+    {
+      "name": "Dashboard Next Action",
+      "kind": "card",
+      "refersTo": "next-action-panel",
+      "description": "The dominant dashboard panel that answers what to study now.",
+      "html": "<section class=\"ds-next-action\"><div><span>Continue Studying</span><em>High Priority</em></div><small>Normalization</small><h2>Second Normal Form</h2><p>Learn how to identify and remove partial dependencies from a relation.</p><button>Continue Study Session</button><footer>Built from Lecture 04 and Tutorial 04</footer></section>",
+      "css": ".ds-next-action { max-width: 620px; border-radius: 16px; background: var(--ink, #172039); color: #fff; padding: 28px; box-shadow: 0 18px 45px rgba(23,32,57,.16); font-family: Manrope, ui-sans-serif, sans-serif; } .ds-next-action > div { display: flex; justify-content: space-between; align-items: center; color: #b9b6ff; font-size: .78rem; font-weight: 800; } .ds-next-action em { border-radius: 99px; background: var(--amber-pale, #fff2d8); color: var(--amber, #8a5c11); padding: 7px 10px; font-size: .68rem; font-style: normal; } .ds-next-action > small { display: block; margin-top: 42px; color: #9fa9bd; } .ds-next-action h2 { margin: 4px 0 0; font-size: 2rem; letter-spacing: -.025em; } .ds-next-action p { max-width: 52ch; margin: 10px 0 24px; color: #c3cada; line-height: 1.65; } .ds-next-action button { min-height: 46px; border: 0; border-radius: 12px; background: var(--indigo, #5b55d9); color: #fff; padding: 0 19px; font-weight: 800; cursor: pointer; } .ds-next-action button:hover { background: var(--indigo-dark, #423db6); } .ds-next-action button:focus-visible { outline: 3px solid rgba(155,151,255,.5); outline-offset: 3px; } .ds-next-action footer { margin-top: 16px; color: #9fa9bd; font-size: .72rem; }"
+    },
+    {
+      "name": "Five-Stage Study Stepper",
+      "kind": "custom",
+      "description": "The persistent Understand, Example, Check, Practice, Complete orientation sequence.",
+      "html": "<div class=\"ds-stepper\" aria-label=\"Study stage 3 of 5\"><span class=\"ds-step-complete\"><i>✓</i><b>Understand</b></span><span class=\"ds-step-complete\"><i>✓</i><b>Example</b></span><span class=\"ds-step-active\"><i>3</i><b>Check</b></span><span><i>4</i><b>Practice</b></span><span><i>5</i><b>Complete</b></span></div>",
+      "css": ".ds-stepper { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 24px 0; border-block: 1px solid var(--line, #dfe3f3); color: #8a91a4; font: 700 .72rem Manrope, ui-sans-serif, sans-serif; } .ds-stepper > span { display: flex; align-items: center; gap: 8px; } .ds-stepper i { width: 30px; height: 30px; border: 1px solid #cfd4e5; border-radius: 50%; display: grid; place-items: center; font-style: normal; } .ds-stepper .ds-step-complete { color: var(--mint, #267664); } .ds-stepper .ds-step-complete i { border-color: var(--mint, #267664); background: var(--mint, #267664); color: #fff; } .ds-stepper .ds-step-active { color: var(--indigo-dark, #423db6); } .ds-stepper .ds-step-active i { border-color: var(--indigo, #5b55d9); background: var(--indigo, #5b55d9); color: #fff; box-shadow: 0 0 0 5px var(--indigo-pale, #e9e9ff); } @media (max-width: 620px) { .ds-stepper b { display: none; } }"
+    },
+    {
+      "name": "Study Stage Card",
+      "kind": "card",
+      "refersTo": "study-card",
+      "description": "A low-density lesson card containing one learning job and one forward decision.",
+      "html": "<article class=\"ds-study-card\"><header><small>Understand the idea</small><h2>Second Normal Form</h2></header><ol><li>A table must already be in First Normal Form.</li><li>Check whether the table has a composite key.</li><li>Find attributes that depend on only part of that key.</li></ol><button>Give me an example</button></article>",
+      "css": ".ds-study-card { max-width: 920px; overflow: hidden; border: 1px solid var(--line, #dfe3f3); border-radius: 16px; background: #fff; color: var(--ink, #172039); box-shadow: 0 18px 45px rgba(40,45,95,.09); font-family: Manrope, ui-sans-serif, sans-serif; } .ds-study-card header { padding: 20px 26px; border-bottom: 1px solid #e8eaf2; } .ds-study-card small { color: var(--muted, #68718a); } .ds-study-card h2 { margin: 4px 0 0; letter-spacing: -.025em; } .ds-study-card ol { margin: 0; padding: 24px 50px; color: var(--soft-ink, #515c75); line-height: 1.65; } .ds-study-card li + li { margin-top: 16px; } .ds-study-card button { min-height: 42px; margin: 0 26px 24px; border: 0; border-radius: 12px; background: var(--indigo-pale, #e9e9ff); color: var(--indigo-dark, #423db6); padding: 0 19px; font-weight: 800; cursor: pointer; } .ds-study-card button:hover { background: #dedfff; } .ds-study-card button:focus-visible { outline: 3px solid rgba(91,85,217,.28); outline-offset: 3px; }"
+    },
+    {
+      "name": "Source Provenance Strip",
+      "kind": "custom",
+      "refersTo": "source-strip",
+      "description": "Attached evidence with explicit file, location, grounded status, and report action.",
+      "html": "<section class=\"ds-source-strip\"><strong>Sources</strong><div><button>Lecture 04 - Normalization.pdf<small>Slide 17</small></button><button>Tutorial 04 - Normalization.docx<small>Question 3</small></button></div><footer><span>✓ Grounded in 2 course sources</span><a href=\"#\">Report incorrect answer</a></footer></section>",
+      "css": ".ds-source-strip { border-radius: 0 0 12px 12px; background: var(--mint-pale, #e7f5f0); color: var(--mint, #267664); padding: 18px 26px; font: 700 .72rem Manrope, ui-sans-serif, sans-serif; } .ds-source-strip > div { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; } .ds-source-strip button { min-height: 48px; border: 1px solid #bcded5; border-radius: 9px; background: #fff; color: var(--mint, #267664); padding: 8px 12px; text-align: left; font-weight: 700; cursor: pointer; } .ds-source-strip button:hover { border-color: var(--mint, #267664); } .ds-source-strip button:focus-visible { outline: 3px solid rgba(38,118,100,.22); outline-offset: 2px; } .ds-source-strip small { display: block; margin-top: 2px; color: #547a71; font-weight: 400; } .ds-source-strip footer { display: flex; justify-content: space-between; gap: 16px; margin-top: 14px; } .ds-source-strip a { color: #466b62; }"
+    },
+    {
+      "name": "Tutor Missing Evidence",
+      "kind": "custom",
+      "description": "The honest answer state used when uploaded material cannot support a course-specific response.",
+      "html": "<article class=\"ds-missing-evidence\"><span>?</span><div><h2>I couldn’t find enough information in your uploaded material.</h2><p>I won’t invent a course-specific answer without supporting material.</p><button>Search another topic</button><button class=\"ds-missing-upload\">Upload more material</button></div></article>",
+      "css": ".ds-missing-evidence { max-width: 720px; border-radius: 15px; background: #fff; padding: 26px; display: grid; grid-template-columns: 50px 1fr; gap: 16px; color: var(--ink, #172039); box-shadow: 0 12px 30px rgba(40,45,95,.07); font-family: Manrope, ui-sans-serif, sans-serif; } .ds-missing-evidence > span { width: 50px; height: 50px; border-radius: 13px; background: var(--amber-pale, #fff2d8); color: var(--amber, #8a5c11); display: grid; place-items: center; font-weight: 800; } .ds-missing-evidence h2 { margin: 0; font-size: 1.05rem; line-height: 1.45; } .ds-missing-evidence p { margin: 8px 0 17px; color: var(--muted, #68718a); font-size: .8rem; line-height: 1.55; } .ds-missing-evidence button { min-height: 42px; border: 1px solid var(--line-strong, #cbd1e5); border-radius: 12px; background: #fff; color: var(--indigo-dark, #423db6); padding: 0 16px; font-weight: 800; cursor: pointer; } .ds-missing-evidence .ds-missing-upload { margin-left: 8px; border-color: transparent; background: var(--indigo-pale, #e9e9ff); } .ds-missing-evidence button:focus-visible { outline: 3px solid rgba(91,85,217,.28); outline-offset: 3px; }"
+    },
+    {
+      "name": "Selected Preference Control",
+      "kind": "button",
+      "refersTo": "preference-control-selected",
+      "description": "A selected learning preference inside a full-width segmented group.",
+      "html": "<button class=\"ds-preference-selected\" aria-pressed=\"true\">Balanced <span>✓</span></button>",
+      "css": ".ds-preference-selected { min-height: 41px; min-width: 220px; border: 1px solid #8d88dc; border-radius: 10px; background: var(--indigo-pale, #e9e9ff); color: var(--indigo-dark, #423db6); padding: 0 18px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; font: 750 .72rem Manrope, ui-sans-serif, sans-serif; cursor: pointer; } .ds-preference-selected:hover { background: #dedfff; } .ds-preference-selected:focus-visible { outline: 3px solid rgba(91,85,217,.28); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Connected Study Chapters",
+    "overview": "Tutorly feels like a calm sequence of connected study chapters inside one dependable university workspace. A compact ink sidebar keeps the course and destination visible, while the cool canvas gives each task enough room to breathe. Every view establishes one clear heading, one dominant next action, and only the supporting context needed to continue.\n\nThe dashboard answers “what should I study now?” rather than displaying a generic analytics grid. Course materials, revision priorities, Tutorly AI, progress, and learning preferences are supporting chapters around a deliberately low-density five-stage session: Understand, Example, Check, Practice, and Complete. Visible source provenance remains part of the answer itself; when the uploaded material is insufficient, Tutorly says so instead of fabricating course-specific guidance.",
+    "keyCharacteristics": [
+      "Calm app shell with a compact dark sidebar and generous cool-white workspace.",
+      "Recommendation-led dashboard with one dominant study action.",
+      "Narrow, low-density study stages sequenced one task at a time.",
+      "Deep-ink Manrope hierarchy with restrained indigo orientation and action.",
+      "Mint source surfaces that keep course evidence adjacent to claims.",
+      "Honest tutor states for both grounded answers and missing evidence."
+    ],
+    "rules": [
+      {
+        "name": "The Two-Meaning Accent Rule",
+        "body": "Indigo means action or orientation; mint means provenance, readiness, completion, or validated feedback. Do not swap those roles for decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Quiet Canvas Rule",
+        "body": "Most of every screen remains cool white, white, deep ink, or pale lilac so the few saturated states retain meaning.",
+        "section": "colors"
+      },
+      {
+        "name": "The Exception Color Rule",
+        "body": "Amber and rose appear only when priority, caution, or an answered state requires them; they never become ambient decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Chapter Heading Rule",
+        "body": "Every view gets one clear heading; supporting type steps down sharply instead of competing with it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Teaching Measure Rule",
+        "body": "Long explanations stay narrower than the application shell and are broken into ordered steps, examples, or checks before another paragraph is added.",
+        "section": "typography"
+      },
+      {
+        "name": "The One-Task Stage Rule",
+        "body": "A study stage contains one learning job and one forward decision; optional detail, hints, and alternate explanations reveal within that stage instead of spawning a competing layout.",
+        "section": "layout"
+      },
+      {
+        "name": "The Ambient-Only Rule",
+        "body": "Shadows are diffuse and low-contrast; borders, canvas contrast, and tonal fields do most structural work.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Large-Panel Rule",
+        "body": "Use 16px radii for primary working surfaces and 10–13px for nested controls; smaller radii belong inside larger ones, never the other way around.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do use the compact dark app shell to keep destinations, course context, and learning preferences consistently oriented.",
+      "Do make the dashboard answer what to study now with one dominant continuation action and quieter supporting panels.",
+      "Do preserve the Understand, Example, Check, Practice, and Complete sequence as the study-session backbone.",
+      "Do keep study stages deliberately low-density and reveal optional detail, hints, or alternate explanations only on request.",
+      "Do place visible file-and-location provenance beside or directly beneath grounded study support and tutor answers.",
+      "Do show an explicit missing-evidence state when course material cannot support an answer.",
+      "Do use mint only for grounded, ready, correct, or complete meaning, and preserve focus rings, responsive stacking, semantic controls, and reduced-motion support.",
+      "Do describe preferences as user choices available to every student, without asking for or inferring a diagnosis."
+    ],
+    "donts": [
+      "Don't reintroduce the former four-screen Home, Upload, Choose, and Result rail or a feature-gallery flow inside the final app shell.",
+      "Don't turn the dashboard into a generic AI control center, analytics wall, or grid of equal-weight cards.",
+      "Don't present Tutorly AI as an ungrounded general chatbot or hide sources behind a separate detail view.",
+      "Don't place multiple learning jobs, competing calls to action, or dense reference material into one study stage.",
+      "Don't use indigo and mint as interchangeable decoration or let amber and rose become ambient palette colors.",
+      "Don't introduce childish styling, medical framing, grade guarantees, assessment predictions, heavy shadows, or glass effects."
+    ]
+  }
+}
