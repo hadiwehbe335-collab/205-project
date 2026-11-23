@@ -1,0 +1,280 @@
+.boot-scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  color: #1b1f3b;
+  background: #eaf2fa;
+  --device: min(66vw, 76svh, 650px);
+  --bezel: clamp(10px, 2.1vmin, 20px);
+}
+.boot-room {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 81%, #b1c9ea50, transparent 37%),
+    radial-gradient(ellipse at 50% 23%, #fff7ec, #edf5fa 60%, #dfebf9);
+}
+.boot-room::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: .33;
+  background-image: radial-gradient(#7b9bc2 0.7px, transparent 0.9px);
+  background-size: 24px 24px;
+  mask-image: radial-gradient(ellipse, transparent 31%, black 76%);
+}
+.boot-room i {
+  position: absolute;
+  width: clamp(12px, 2vw, 28px);
+  aspect-ratio: 1;
+  background: #5bb8ff;
+  clip-path: polygon(50% 0, 63% 37%, 100% 50%, 63% 63%, 50% 100%, 37% 63%, 0 50%, 37% 37%);
+  left: 18%;
+  top: 31%;
+}
+.boot-scene:not(.boot-zooming) .boot-room i { animation: boot-float 4.8s ease-in-out infinite alternate; }
+.boot-room i:nth-child(2) { left: 79%; top: 26%; background: #b9a2ff; scale: 1.3; }
+.boot-room i:nth-child(3) { left: 80%; top: 57%; background: #ff9e7a; scale: .65; }
+.boot-room i:nth-child(4) { left: 24%; top: 65%; background: #7bd88f; scale: .7; }
+.boot-camera {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform-origin: top left;
+}
+.boot-set { padding-top: 10px; }
+.boot-laptop { position: relative; width: var(--device); isolation: isolate; }
+.boot-laptop::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -12%;
+  right: -12%;
+  bottom: -10%;
+  height: 32%;
+  background: radial-gradient(ellipse, #1b1f3b66, #4569a129 46%, transparent 72%);
+  filter: blur(10px);
+}
+.boot-lid {
+  position: relative;
+  width: 100%;
+  padding: var(--bezel) calc(var(--bezel) * .88) calc(var(--bezel) * 1.1);
+  border-radius: clamp(14px, 3vmin, 30px) clamp(14px, 3vmin, 30px) 9px 9px;
+  background: linear-gradient(150deg, #fffdfa, #fff7ec 63%, #d6c6b2);
+  border: 2px solid #1b1f3b;
+  box-shadow: inset 0 2px 0 #fff, 0 -1px 0 2px #ffffff80, 0 7px 0 #333751;
+}
+.boot-webcam {
+  position: absolute;
+  z-index: 2;
+  width: 5px;
+  height: 5px;
+  top: calc(var(--bezel) * .42);
+  left: 50%;
+  border-radius: 50%;
+  background: #1b1f3b;
+  box-shadow: inset 1px 1px 0 #7cc6ff88, 0 0 0 1.5px #c4b29e;
+}
+.boot-lid-mark {
+  position: absolute;
+  bottom: calc(var(--bezel) * .36);
+  left: 50%;
+  width: 28px;
+  height: 2px;
+  translate: -50%;
+  border-radius: 8px;
+  background: #9f8d7c;
+}
+.boot-screen {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9.25;
+  overflow: hidden;
+  border-radius: clamp(5px, 1.2vmin, 12px);
+  color: #fff7ec;
+  background: #1b1f3b;
+  box-shadow: 0 0 0 2px #12152c, inset 0 0 20px #080b1b99;
+}
+.boot-screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(124deg, #c6eaff16, transparent 22% 43%, #b5d9ff0a 43% 61%, transparent 61%),
+    repeating-linear-gradient(transparent 0 3px, #13172c24 3px 4px);
+  transition: opacity 430ms;
+}
+.boot-screen-glow {
+  position: absolute;
+  inset: 0;
+  opacity: .45;
+  background: radial-gradient(ellipse at 50% 49%, #3c65a0, #273554 52%, transparent 75%);
+}
+.boot-display { position: relative; text-align: center; }
+.boot-status {
+  color: #b9cbec;
+  font-size: clamp(.52rem, 1.05vw, .71rem);
+  font-weight: 700;
+  letter-spacing: .19em;
+  text-transform: uppercase;
+}
+.boot-status i {
+  display: inline-block;
+  width: .55em;
+  aspect-ratio: 1;
+  margin-right: .4em;
+  border-radius: 50%;
+  background: #7bd88f;
+  box-shadow: 0 0 8px #7bd88fbb;
+}
+.boot-wordmark { display: block; width: clamp(128px, calc(var(--device) * .49), 306px); height: auto; margin: 8px auto 2px; }
+.boot-display p { color: #e2ebff; margin: 0; font-size: clamp(.76rem, 2vmin, 1.04rem); }
+.boot-sticker {
+  position: absolute;
+  z-index: 1;
+  right: 5%;
+  bottom: 8%;
+  display: grid;
+  place-items: center;
+  width: clamp(32px, calc(var(--device) * .085), 53px);
+  aspect-ratio: 1;
+  background: #fff7ec;
+  border: 2px solid #ff8fb8;
+  border-radius: 46% 54% 46% 50%;
+  box-shadow: 0 2px 0 #10152bc0, inset 0 0 0 2px #fff;
+  rotate: 11deg;
+}
+.boot-sticker img { width: 58%; height: auto; filter: drop-shadow(1px 1px 0 #ffcc57); }
+.boot-deck {
+  position: relative;
+  z-index: -1;
+  width: 112%;
+  margin-left: -6%;
+  height: calc(var(--device) * .224);
+  margin-top: -1px;
+  padding: 1.5% 10% 2%;
+  background: linear-gradient(173deg, #d4bfab, #fff7ec 37%, #e5d7c7);
+  border: 2px solid #1b1f3b;
+  border-radius: 4% 4% 8% 8% / 13% 13% 24% 24%;
+  box-shadow: 0 5px 0 #ac9989, 0 7px 0 1px #1b1f3b, inset 0 -3px 0 #fff9ef;
+  transform: perspective(570px) rotateX(32deg);
+  transform-origin: center top;
+}
+.boot-hinge {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 0;
+  height: 5%;
+  background: #4f4b60;
+  border-radius: 0 0 10px 10px;
+}
+.boot-speakers {
+  position: absolute;
+  top: 18%;
+  bottom: 31%;
+  left: 5%;
+  right: 5%;
+  background-image: radial-gradient(#43465e 24%, transparent 30%);
+  background-size: 4px 4px;
+}
+.boot-keyboard {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 4%;
+  width: 92%;
+  margin-inline: auto;
+  height: 65%;
+  padding: 1.1% 1.4%;
+  background: #d5c3b3;
+  border: 1px solid #a9917f;
+  border-radius: 7px;
+}
+.boot-keys { display: flex; gap: 1%; }
+.boot-keys span {
+  flex: 1;
+  background: #353951;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 #a7a8b380, 0 1px 0 #15192c;
+}
+.boot-keys:nth-child(1) span:first-child { background: #5bb8ff; }
+.boot-keys:nth-child(2) span:last-child, .boot-keys:nth-child(4) span:last-child { flex: 1.8; }
+.boot-keys:last-child span:nth-child(4) { flex: 5; background: #73758b; }
+.boot-trackpad {
+  width: 27%;
+  height: 28%;
+  margin: 1% auto 0;
+  border-radius: 7px;
+  border: 1px solid #ac9989;
+  box-shadow: inset 0 1px 0 #fff9ef;
+  background: #efe4d7;
+}
+.boot-chassis {
+  position: absolute;
+  top: 100%;
+  left: 42%;
+  width: 16%;
+  height: 5%;
+  border-radius: 0 0 100px 100px;
+  background: #746b70;
+}
+.boot-actions { text-align: center; margin-top: clamp(16px, 4svh, 32px); }
+.boot-button {
+  min-height: 60px;
+  min-width: 194px;
+  border: 2px solid #1b1f3b;
+  border-radius: 15px;
+  padding: 0 24px;
+  background: #ffd84d;
+  color: #1b1f3b;
+  box-shadow: inset 0 2px 0 #fff2aa, 0 5px 0 #1b1f3b, 0 10px 20px #233c7740;
+  font-family: Fredoka, system-ui, sans-serif;
+  font-size: clamp(1.24rem, 2.9vmin, 1.65rem);
+  font-weight: 700;
+  letter-spacing: .045em;
+  cursor: pointer;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+.boot-button span { margin-right: .26em; font-family: system-ui, sans-serif; }
+@media (hover: hover) { .boot-button:hover { transform: translateY(-2px); } }
+.boot-button:active, .boot-zooming .boot-button {
+  transform: translateY(4px);
+  box-shadow: inset 0 2px 0 #ffec91, 0 1px 0 #1b1f3b;
+}
+.boot-actions p { margin: 15px 0 0; font-size: clamp(.82rem, 2vmin, .98rem); font-weight: 700; }
+.boot-zooming .boot-display, .boot-zooming .boot-sticker, .boot-zooming .boot-screen::after {
+  animation: boot-clear 560ms 120ms both;
+}
+.boot-zooming .boot-screen-glow { animation: boot-illuminate 1160ms both; }
+.boot-zooming .boot-lid { animation: boot-bezel-light 1160ms both; }
+@keyframes boot-float { from { transform: translateY(0); } to { transform: translateY(-8px); } }
+@keyframes boot-clear { to { opacity: 0; } }
+@keyframes boot-illuminate {
+  0% { opacity: .45; }
+  32% { opacity: 1; background-color: #5bb8ff65; }
+  100% { opacity: 0; }
+}
+@keyframes boot-bezel-light {
+  37% { box-shadow: inset 0 2px 0 #fff, 0 7px 0 #333751, 0 0 50px #5bb8ff; }
+  100% { box-shadow: 0 0 0 transparent; }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .boot-scene { --device: min(78vw, 53svh); }
+  .boot-actions { margin-top: 28px; }
+}
+@media (max-height: 430px) {
+  .boot-scene { --device: min(62vw, 70svh); --bezel: 9px; }
+  .boot-button { min-height: 44px; min-width: 150px; }
+  .boot-actions { margin-top: 13px; }
+  .boot-actions p { margin-top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .boot-scene:not(.boot-zooming) .boot-room i { animation: none; }
+  .boot-button { transition: none; }
+  .boot-button:hover, .boot-button:active { transform: none; }
+}

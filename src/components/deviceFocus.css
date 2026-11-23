@@ -1,0 +1,155 @@
+.focus-share {
+  display: grid;
+  gap: 18px;
+  padding: var(--panel-padding);
+  border: var(--outline);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--shadow);
+  background: var(--surface);
+}
+.focus-share h2 { font-size: 1.55rem; }
+.focus-share p { margin-top: 4px; line-height: 1.45; }
+.focus-share-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 20px;
+}
+.focus-field { min-width: 0; }
+.focus-field label { display: block; margin-bottom: 6px; font-weight: 800; }
+.focus-field-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.focus-field-row input, .focus-start input {
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: var(--outline);
+  border-radius: 10px;
+  color: var(--ink);
+  background: var(--cream);
+  font: inherit;
+}
+.focus-field-row input { flex: 1 1 165px; }
+.focus-field-row .button { min-height: 44px; text-decoration: none; }
+.focus-field > p { font-size: .9rem; }
+.focus-field > a { display: inline-block; margin-top: 5px; }
+.dashboard-page .page-actions { flex-wrap: wrap; }
+.dashboard-page .device-lock-button { background: #a8253d; color: var(--cream); }
+.dashboard-page .device-lock-button:hover { background: #8d1d32; }
+
+.focus-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: clamp(18px, 5vw, 44px);
+  color: var(--ink);
+  background: radial-gradient(ellipse at 50% 30%, var(--cream), #e2f3fd 90%);
+}
+.focus-page-interrupted { background: #a8253d; }
+.focus-session {
+  width: min(100%, 560px);
+  display: grid;
+  justify-items: center;
+  gap: 17px;
+  padding: clamp(24px, 6vw, 48px);
+  border: var(--outline);
+  border-radius: var(--panel-radius);
+  background: var(--cream);
+  box-shadow: 0 6px 0 var(--ink);
+  text-align: center;
+}
+.focus-session h1 { font-size: clamp(2rem, 7vw, 3.15rem); }
+.focus-session p { max-width: 34ch; line-height: 1.5; }
+.focus-portrait {
+  position: relative;
+  width: 126px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--sky-pale);
+}
+.focus-page-interrupted .focus-portrait { background: #ffc5c0; }
+.focus-portrait-angry {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  pointer-events: none;
+}
+.focus-start { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 9px; }
+.focus-start label { font-weight: 800; }
+.focus-start input { width: 75px; }
+.focus-start .button { min-height: 44px; }
+.focus-clock {
+  font: 700 clamp(3.1rem, 12vw, 6.5rem) / 1 var(--font-heading);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.035em;
+}
+.focus-encouragement {
+  width: 100%;
+  min-height: 5.2em;
+  display: grid;
+  place-items: center;
+}
+.focus-quote {
+  margin: 0;
+  max-width: 35ch;
+  font-size: clamp(1rem, 3vw, 1.21rem);
+  font-weight: 700;
+  line-height: 1.45;
+}
+.focus-quote-static { display: none; }
+.focus-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: reduce) {
+  .focus-quote-static { display: inline; }
+  .focus-quote-typed { display: none; }
+}
+
+.focus-page-break { background: var(--sunny); }
+.focus-page-break .focus-portrait { background: #ffed9d; }
+.focus-page-complete { background: var(--leaf); }
+.focus-page-complete .focus-portrait { background: #d4f6d4; }
+.focus-break-options {
+  width: 100%;
+  min-inline-size: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.focus-break-options legend {
+  margin: 0 auto 9px;
+  font-weight: 800;
+}
+.focus-break-options > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+.focus-break-options .button {
+  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  padding: 7px 12px;
+}
+.focus-break-options .button span, .focus-break-note {
+  font-size: .85rem;
+  font-weight: 600;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .focus-page-complete .focus-portrait .ollie {
+    animation: focus-celebrate 620ms cubic-bezier(.22, .75, .3, 1) both;
+  }
+}
+@keyframes focus-celebrate {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  36% { transform: translateY(-16px) rotate(-7deg); }
+  66% { transform: translateY(-4px) rotate(5deg); }
+}

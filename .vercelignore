@@ -1,0 +1,9 @@
+.local/
+.vercel/
+.env*
+node_modules/
+dist/
+.agents/
+.claude/
+.codex/
+.impeccable/
